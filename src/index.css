@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: var(--primary-dark-txt);
-  background-color: #242424;
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,21 +20,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
 a {
   font-weight: 500;
-  color: var(--secondary-light-txt);
+  color: var(--primary-light-txt);
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -52,10 +55,16 @@ button {
   font-family: inherit;
   /* background-color: rgba(0, 0, 0, 0); */
   cursor: pointer;
-  transition: border-color 0.25s;
+  /* transition: border-color 0.25s; */
 }
 button:hover {
-  background-color: hsla(var(--secondary-dark-txt), 100%, 0, 0.5);
+  background-color: hsla(
+    var(--secondary-light-txt) 100% 100% 0.8
+  ); /* TODO: This isn't setting the color properly */
+}
+
+ol {
+  color: var(--secondary-light-txt);
 }
 
 /* @media (prefers-color-scheme: light) {

@@ -1,7 +1,17 @@
-nav {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  right: 0;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100px;
+}
+
+.link_list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: inherit;
 }

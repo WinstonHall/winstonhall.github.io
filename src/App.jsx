@@ -1,4 +1,3 @@
-import "./App.css"
 import { IntroHead, Navbar } from "./components"
 
 function App() {

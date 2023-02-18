@@ -1,0 +1,19 @@
+.toggle_btn {
+    /* Class Scope Variables */
+    --icon-size: 2rem;
+    --hover_offset: 0.75rem;
+
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.toggle_btn:hover {
+    top: var(--hover_offset);
+    right: var(--hover_offset);
+    width: calc(var(--icon-size) * 1.25);
+    height: calc(var(--icon-size) * 1.25);
+}

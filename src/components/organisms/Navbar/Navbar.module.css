@@ -1,17 +1,27 @@
 .nav {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
-    position: sticky;
+    background: black;
+    position: fixed;
     top: 0;
-    right: 0;
-    height: 100px;
+    left: 0;
+    gap: 3rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav_hide {
+    display: none;
+    right: 100vw;
 }
 
 .link_list {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    text-align: left;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: left;
     gap: inherit;
 }

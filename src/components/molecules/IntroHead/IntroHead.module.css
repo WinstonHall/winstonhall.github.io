@@ -1,0 +1,6 @@
+.intro_head {
+    margin: var(--gap-section);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}

@@ -1,0 +1,17 @@
+.section_head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section_head span {
+    color: var(--secondary-light-txt);
+}
+
+.section_head::after {
+    background-color: var(--secondary-light-txt);
+    position: relative;
+    content: '';
+    flex: 1;
+    top: 3px;
+    height: 1px;
+}

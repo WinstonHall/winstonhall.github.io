@@ -1,10 +1,11 @@
-import { IntroHead, Navbar } from './components'
+import { AboutMe, IntroHead, Navbar } from './components'
 
 function App() {
     return (
         <div className='App'>
             <Navbar />
             <IntroHead />
+            <AboutMe />
         </div>
     )
 }

@@ -1,0 +1,6 @@
+.about_me {
+    margin: var(--gap-section);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

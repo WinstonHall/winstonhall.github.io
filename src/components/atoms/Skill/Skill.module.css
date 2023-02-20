@@ -1,0 +1,6 @@
+.skill {
+    flex: 1;
+    width: 45%;
+    min-width: 45%;
+    max-width: 45%;
+}

@@ -1,4 +1,5 @@
 export { ExternalLink } from './ExternalLink/ExternalLink'
+export { Job } from './Job/Job'
 export { OrderListLink } from './OrderListLink/OrderListLink'
 export { SectionHead } from './SectionHead/SectionHead'
 export { Skill } from './Skill/Skill'

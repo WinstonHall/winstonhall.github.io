@@ -1,0 +1,10 @@
+.job_btn {
+    white-space: nowrap;
+    flex: 1;
+    border: none;
+    border-radius: 0;
+}
+
+.selected_btn {
+    border-bottom: solid 2px var(--secondary-light-txt);
+}

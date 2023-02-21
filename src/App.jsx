@@ -1,4 +1,4 @@
-import { AboutMe, IntroHead, Navbar } from './components'
+import { AboutMe, IntroHead, Navbar, WorkExperience } from './components'
 
 function App() {
     return (
@@ -6,6 +6,7 @@ function App() {
             <Navbar />
             <IntroHead />
             <AboutMe />
+            <WorkExperience />
         </div>
     )
 }

@@ -1,0 +1,5 @@
+.job_list {
+    display: flex;
+    padding-bottom: 0.4rem;
+    overflow-x: scroll;
+}

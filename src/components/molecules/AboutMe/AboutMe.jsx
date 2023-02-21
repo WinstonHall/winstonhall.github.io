@@ -4,7 +4,7 @@ import { about_me } from './AboutMe.module.css'
 export function AboutMe() {
     return (
         <div className={about_me}>
-            <SectionHead number={0} title='Da Title' />
+            <SectionHead number={0} title='About Me' />
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis dolores necessitatibus consequatur saepe!

@@ -1,15 +1,59 @@
-import { Job, JobList, SectionHead } from '../../index.js'
+import { useMemo, useState } from 'react'
+import { Job, JobDescription, JobList, SectionHead } from '../../'
 import { work_experience } from './WorkExperience.module.css'
 
 export function WorkExperience() {
+    const jobs = [
+        {
+            jobTitle: 'Placeholder Job Title',
+            companyName: 'Placeholder Company Name',
+            startDate: 'Jan 1911',
+            endDate: 'Present',
+            jobDescriptions: [
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+            ],
+        },
+        {
+            jobTitle: 'Placeholder Job Title2',
+            companyName: 'Placeholder Company Name2',
+            startDate: 'Jan 1960',
+            endDate: 'Present',
+            jobDescriptions: [
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
+            ],
+        },
+    ]
+
+    const [selectedJobIndex, setSelectedJobIndex] = useState(0)
+
+    const currentJobDescription = useMemo(
+        function () {
+            return <JobDescription {...jobs[selectedJobIndex]} />
+        },
+        [selectedJobIndex]
+    )
+
     return (
         <div className={work_experience}>
-            <SectionHead number={2} title='WorkExperience' />
+            <SectionHead number={1} title='WorkExperience' />
             <JobList>
-                <Job job={'Placeholder Job Title'} isSelected={true} />
-                <Job job={'Placeholder Job Title'} />
-                <Job job={'Placeholder Job Title'} />
+                {jobs.map(function ({ jobTitle }, index) {
+                    return (
+                        <Job
+                            key={`job-${index}`}
+                            jobTitle={jobTitle}
+                            updateSelected={function () {
+                                setSelectedJobIndex(index)
+                            }}
+                        />
+                    )
+                })}
             </JobList>
+            {currentJobDescription}
         </div>
     )
 }

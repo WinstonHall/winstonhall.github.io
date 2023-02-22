@@ -10,10 +10,22 @@ export function Navbar() {
             <ToggleNav {...{ isToggled, setIsToggled }} />
             <nav className={`${nav}${isToggled ? ` ${nav_hide}` : ''}`}>
                 <ol className={link_list}>
-                    <OrderListLink hrefID='about' text='About' />
-                    <OrderListLink hrefID='experience' text='Experience' />
-                    <OrderListLink hrefID='work' text='Work' />
-                    <OrderListLink hrefID='contact' text='Contact' />
+                    <OrderListLink
+                        hrefID='about'
+                        positionNum={0}
+                        text='About'
+                    />
+                    <OrderListLink
+                        hrefID='experience'
+                        positionNum={1}
+                        text='Experience'
+                    />
+                    <OrderListLink hrefID='work' positionNum={2} text='Work' />
+                    <OrderListLink
+                        hrefID='contact'
+                        positionNum={3}
+                        text='Contact'
+                    />
                 </ol>
                 <ExternalLink href='/' text='Resume' />
             </nav>

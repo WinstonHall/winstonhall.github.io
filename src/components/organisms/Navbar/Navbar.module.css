@@ -24,4 +24,5 @@
     justify-content: inherit;
     align-items: left;
     gap: inherit;
+    list-style: none;
 }

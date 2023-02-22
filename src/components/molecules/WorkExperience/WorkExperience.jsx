@@ -46,6 +46,7 @@ export function WorkExperience() {
                         <Job
                             key={`job-${index}`}
                             jobTitle={jobTitle}
+                            isSelected={selectedJobIndex === index}
                             updateSelected={function () {
                                 setSelectedJobIndex(index)
                             }}

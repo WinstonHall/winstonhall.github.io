@@ -1,0 +1,8 @@
+.footer {
+    text-align: center;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-evenly;
+}

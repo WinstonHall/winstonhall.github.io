@@ -1,4 +1,4 @@
-import { Project, ProjectList, SectionHead } from '../../'
+import { Project, ProjectList, SectionHead } from '../../index.js'
 import { noteworthy_project } from './NoteworthyProjects.module.css'
 
 export function NoteworthyProjects() {

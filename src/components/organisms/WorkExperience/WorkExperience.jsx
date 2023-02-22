@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { JobButton, JobDescription, JobList, SectionHead } from '../../'
+import { JobButton, JobDescription, JobList, SectionHead } from '../../index.js'
 import { work_experience } from './WorkExperience.module.css'
 
 export function WorkExperience() {

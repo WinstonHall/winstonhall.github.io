@@ -1,10 +1,11 @@
 import {
-    AboutMe,
-    IntroHead,
-    Navbar,
-    NoteworthyProjects,
-    WorkExperience,
-} from './components'
+   AboutMe, Footer,
+   GetInTouch,
+   IntroHead,
+   Navbar,
+   NoteworthyProjects,
+   WorkExperience
+} from './components';
 
 function App() {
     return (
@@ -14,6 +15,8 @@ function App() {
             <AboutMe />
             <WorkExperience />
             <NoteworthyProjects />
+            <GetInTouch />
+            <Footer/>
         </div>
     )
 }

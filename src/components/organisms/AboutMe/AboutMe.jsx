@@ -1,4 +1,4 @@
-import { SectionHead, Skill, SkillList } from '../../'
+import { SectionHead, Skill, SkillList } from '../../index.js'
 import { about_me } from './AboutMe.module.css'
 
 export function AboutMe() {

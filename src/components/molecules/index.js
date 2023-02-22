@@ -1,8 +1,7 @@
-export { AboutMe } from './AboutMe/AboutMe'
-export { IntroHead } from './IntroHead/IntroHead'
+
 export { JobList } from './JobList/JobList'
-export { NoteworthyProjects } from './NoteworthyProjects/NoteworthyProjects'
+
 export { ProjectList } from './PojectList/PojectList'
 export { SkillList } from './SkillList/SkillList'
 export { ToggleNav } from './ToggleNav/ToggleNav'
-export { WorkExperience } from './WorkExperience/WorkExperience'
+

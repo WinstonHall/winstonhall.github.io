@@ -7,4 +7,6 @@
 
 .selected_btn {
     border-bottom: solid 2px var(--secondary-light-txt);
+    background-color: hsl(220 100% 15%);
+    box-shadow: 0 0 0.75rem hsl(220 100% 30%);
 }

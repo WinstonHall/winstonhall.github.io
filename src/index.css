@@ -46,6 +46,11 @@ ul {
     padding: 0;
 }
 
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+
 /* TODO: Below is cleanup */
 
 a {

@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Job, JobDescription, JobList, SectionHead } from '../../'
+import { JobButton, JobDescription, JobList, SectionHead } from '../../'
 import { work_experience } from './WorkExperience.module.css'
 
 export function WorkExperience() {
@@ -43,7 +43,7 @@ export function WorkExperience() {
             <JobList>
                 {jobs.map(function ({ jobTitle }, index) {
                     return (
-                        <Job
+                        <JobButton
                             key={`job-${index}`}
                             jobTitle={jobTitle}
                             isSelected={selectedJobIndex === index}

@@ -1,11 +1,14 @@
 .external_link {
-    border: solid 2px var(--secondary-light-txt);
-    border-radius: 0.25rem;
     text-align: center;
     color: var(--secondary-light-txt);
-    padding: 0.75rem 1.5rem;
 }
 
-.external_link:hover {
-    background-color: var(--secondary-light-txt);
+.external_link_border {
+    border-radius: 0.25rem;
+    border: 2px solid var(--secondary-light-txt);
+    padding: 0.25rem 0.75rem;
 }
+
+/* .external_link:hover {
+    background-color: var(--secondary-light-txt);
+} */

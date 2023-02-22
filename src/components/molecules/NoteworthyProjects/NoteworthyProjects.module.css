@@ -1,0 +1,4 @@
+.noteworthy_project {
+    display: flex;
+    flex-direction: column;
+}

@@ -27,7 +27,7 @@ export function Navbar() {
                         text='Contact'
                     />
                 </ol>
-                <ExternalLink href='/' text='Resume' />
+                <ExternalLink href='/' content='Resume' border={true} />
             </nav>
         </div>
     )

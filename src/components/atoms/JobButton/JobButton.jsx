@@ -1,6 +1,6 @@
-import { job_btn, selected_btn } from './Job.module.css'
+import { job_btn, selected_btn } from './JobButton.module.css'
 
-export function Job({ jobTitle, isSelected, updateSelected }) {
+export function JobButton({ jobTitle, isSelected, updateSelected }) {
     return (
         <button
             className={`${job_btn} ${isSelected && selected_btn}`}

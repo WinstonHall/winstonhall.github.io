@@ -1,0 +1,31 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(220 100% 15%);
+    box-shadow: 0 0 0.75rem hsl(220 100% 30%);
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.project_head {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.project_foot {
+    justify-self: flex-end;
+    display: inherit;
+    flex-direction: inherit;
+    gap: inherit;
+}
+
+.project_stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.project_links {
+    display: inherit;
+    gap: 0.75rem;
+}

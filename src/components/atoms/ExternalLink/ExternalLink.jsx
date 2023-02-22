@@ -1,9 +1,18 @@
-import { external_link } from "./ExternalLink.module.css"
+import { external_link, external_link_border } from './ExternalLink.module.css'
 
-export function ExternalLink({ href = "/", text = "Missing Text" }) {
-  return (
-    <a className={external_link} href={href} target="_blank" rel="noreferrer">
-      {text}
-    </a>
-  )
+export function ExternalLink({
+    href = '/',
+    content = 'Missing Content',
+    border = false,
+}) {
+    return (
+        <a
+            className={`${external_link} ${border ? external_link_border : ''}`}
+            href={href}
+            target='_blank'
+            rel='noreferrer'
+        >
+            {content}
+        </a>
+    )
 }

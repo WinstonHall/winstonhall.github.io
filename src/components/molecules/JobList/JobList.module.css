@@ -1,5 +1,7 @@
 .job_list {
     display: flex;
-    padding-bottom: 0.4rem;
+    /* padding-bottom: 0.2rem; */
     overflow-x: scroll;
+    border: 1px solid var(--secondary-dark-txt);
+    border-radius: 2px;
 }

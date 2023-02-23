@@ -1,7 +1,6 @@
 .skill_list {
     display: flex;
     flex-wrap: wrap;
-    list-style: circle;
     justify-content: space-between;
     align-items: start;
     gap: 1rem;

@@ -75,6 +75,44 @@ ol {
 
 .wrap_list {
     flex-wrap: wrap;
+    place-content: space-around;
+    gap: inherit;
+}
+
+.wrap_list > li {
+    flex: 1;
+}
+
+.row_1 > li {
+    min-width: 90%;
+    max-width: 90%;
+}
+.row_2 > li {
+    max-width: 45%;
+}
+.row_3 > li {
+    max-width: 25%;
+}
+.row_1,
+.row_2,
+.row_3 {
+}
+.row_3 {
+    place-content: space-between;
+}
+
+.job_selector {
+    display: flex;
+    /* padding-bottom: 0.2rem; */
+    overflow-x: scroll;
+    border: 1px solid var(--secondary-dark-txt);
+    border-radius: 2px;
+}
+
+.job_description {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
 }
 
 .high_light {

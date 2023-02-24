@@ -13,10 +13,10 @@ export function JobDescription({
     // Time Frame Working there
     // List items describing key things I did.
     return (
-        <div>
+        <div className='job_description'>
             <h3>{`${jobTitle} @ ${companyName}`}</h3>
             <h5>{`${startDate} - ${endDate}`}</h5>
-            <ul>
+            <ul className='wrap_list row_1'>
                 {jobDescriptions.map(function (description, index) {
                     return (
                         <li key={`jobDescription-${index}`}>{description}</li>

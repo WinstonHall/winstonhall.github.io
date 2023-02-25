@@ -1,6 +1,5 @@
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
-import { ExternalLink } from '../'
-import { project, project_links } from './Project.module.css'
+import { Link } from '../'
 
 export function Project({
     title = 'Missing Project Title',
@@ -10,26 +9,28 @@ export function Project({
     hostedProjectLink,
 }) {
     return (
-        <div className={project}>
+        <div className='project'>
             <h3>{title}</h3>
             <p>{description}</p>
             {techStack.length > 0 && (
-                <ul className='wrap_list'>
+                <ul className='list_row'>
                     {techStack.map(function (name, index) {
                         return <li key={`Tech-${index}`}>{name}</li>
                     })}
                 </ul>
             )}
             {(githubRepoLink || hostedProjectLink) && (
-                <div className={project_links}>
+                <div className='project_links'>
                     {githubRepoLink && (
-                        <ExternalLink
+                        <Link
+                            isExternal
                             href={githubRepoLink}
                             content={<FiGithub size='2rem' />}
                         />
                     )}
                     {hostedProjectLink && (
-                        <ExternalLink
+                        <Link
+                            isExternal
                             href={hostedProjectLink}
                             content={<FiExternalLink size='2rem' />}
                         />

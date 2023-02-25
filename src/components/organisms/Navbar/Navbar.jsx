@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { ExternalLink, OrderListLink, ToggleNav } from '../../'
-import { link_list, nav, nav_hide } from './Navbar.module.css'
+import { Link, ToggleNav } from '../../'
 
 export function Navbar() {
     const [isToggled, setIsToggled] = useState(false)
@@ -8,26 +7,37 @@ export function Navbar() {
     return (
         <div>
             <ToggleNav {...{ isToggled, setIsToggled }} />
-            <nav className={`${nav}${isToggled ? ` ${nav_hide}` : ''}`}>
-                <ol className={link_list}>
-                    <OrderListLink
-                        hrefID='about'
-                        positionNum={0}
-                        text='About'
-                    />
-                    <OrderListLink
-                        hrefID='experience'
-                        positionNum={1}
-                        text='Experience'
-                    />
-                    <OrderListLink hrefID='work' positionNum={2} text='Work' />
-                    <OrderListLink
-                        hrefID='contact'
-                        positionNum={3}
-                        text='Contact'
-                    />
-                </ol>
-                <ExternalLink href='/' content='Resume' border={true} />
+            <nav className={`nav ${isToggled ? 'nav_hide' : ''}`}>
+                <Link
+                    className='nav_link'
+                    href='about'
+                    position={0}
+                    content='About'
+                />
+                <Link
+                    className='nav_link'
+                    href='experience'
+                    position={1}
+                    content='Experience'
+                />
+                <Link
+                    className='nav_link'
+                    href='work'
+                    position={2}
+                    content='Work'
+                />
+                <Link
+                    className='nav_link'
+                    href='contact'
+                    position={3}
+                    content='Contact'
+                />
+                <Link
+                    className='reume_link nav_link'
+                    href='/'
+                    isExternal
+                    content='Resume'
+                />
             </nav>
         </div>
     )

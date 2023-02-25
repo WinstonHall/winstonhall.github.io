@@ -16,7 +16,7 @@ export function JobDescription({
         <div className='job_description'>
             <h3>{`${jobTitle} @ ${companyName}`}</h3>
             <h5>{`${startDate} - ${endDate}`}</h5>
-            <ul className='wrap_list row_1'>
+            <ul className='list_col'>
                 {jobDescriptions.map(function (description, index) {
                     return (
                         <li key={`jobDescription-${index}`}>{description}</li>

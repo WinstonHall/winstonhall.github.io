@@ -1,8 +1,8 @@
-import { intro_head } from './IntroHead.module.css'
+import { Link } from '../../atoms'
 
 export function IntroHead() {
     return (
-        <div className={intro_head}>
+        <div className={'intro_head'}>
             <p className='high_light'>Hi, my name is</p>
             <h1>Winston Hall.</h1>
             <h2>I build things for the web</h2>
@@ -10,7 +10,12 @@ export function IntroHead() {
                 I'm a software engineer specializing in building exceptional
                 digital experiences.
             </p>
-            <button>Dussers</button>
+            <Link
+                className='resume_link'
+                isExternal
+                href={'.'}
+                content='Resume'
+            />
         </div>
     )
 }

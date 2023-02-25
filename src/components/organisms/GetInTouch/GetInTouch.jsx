@@ -1,4 +1,4 @@
-import { ExternalLink, SectionHead } from '../../'
+import { Link, SectionHead } from '../../'
 import { get_intouch } from './GetInTouch.module.css'
 
 export function GetInTouch() {
@@ -12,7 +12,9 @@ export function GetInTouch() {
                     numquam exercitationem culpa amet, saepe dicta molestiae
                     quaerat ut tempore eligendi harum possimus.
                 </p>
-                <ExternalLink
+                <Link
+                    className='contact_link'
+                    isExternal
                     href='mailto:wlhdeveloper@gmail.com'
                     content='Contact Me'
                     border={true}

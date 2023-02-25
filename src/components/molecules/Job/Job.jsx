@@ -1,9 +1,8 @@
 import { useMemo, useState } from 'react'
-import { JobButton, JobDescription, JobList, SectionHead } from '../../index.js'
-import { work_experience } from './WorkExperience.module.css'
+import { JobButton, JobDescription } from '../../'
 
-export function WorkExperience() {
-    const jobs = [
+export function Job({
+    jobs = [
         {
             jobTitle: 'Placeholder Job Title',
             companyName: 'Placeholder Company Name',
@@ -26,21 +25,18 @@ export function WorkExperience() {
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, placeat soluta dolorem suscipit natus facilis doloremque?',
             ],
         },
-    ]
-
+    ],
+}) {
     const [selectedJobIndex, setSelectedJobIndex] = useState(0)
 
-    const currentJobDescription = useMemo(
-        function () {
-            return <JobDescription {...jobs[selectedJobIndex]} />
-        },
+    const selectedJobDescription = useMemo(
+        () => <JobDescription {...jobs[selectedJobIndex]} />,
         [selectedJobIndex]
     )
 
     return (
-        <div className={work_experience}>
-            <SectionHead number={1} title='WorkExperience' />
-            <JobList>
+        <>
+            <div className='job_selector'>
                 {jobs.map(function ({ jobTitle }, index) {
                     return (
                         <JobButton
@@ -53,8 +49,8 @@ export function WorkExperience() {
                         />
                     )
                 })}
-            </JobList>
-            {currentJobDescription}
-        </div>
+            </div>
+            {selectedJobDescription}
+        </>
     )
 }

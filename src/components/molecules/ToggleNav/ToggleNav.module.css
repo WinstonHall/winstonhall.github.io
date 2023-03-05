@@ -17,3 +17,10 @@
     width: calc(var(--icon-size) * 1.25);
     height: calc(var(--icon-size) * 1.25);
 }
+
+@media (min-width: 1000px) {
+    .toggle_btn,
+    .toggle_button:hover {
+        display: none;
+    }
+}

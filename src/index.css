@@ -6,6 +6,7 @@
     --primary-dark-txt: #8892b0;
     --secondary-light-txt: #60f0d0;
     --secondary-dark-txt: #308080;
+    --bg-opacity-color: hsla(420, 100%, 0%, 50%);
 
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.45;
@@ -49,9 +50,15 @@ h1 {
     color: var(--primary-light-txt);
 }
 h2,
-h3 {
+h3,
+h5 {
     color: var(--primary-mid-txt);
 }
+
+/* p,
+.job_description li {
+    text-indent: 1rem;
+} */
 
 section {
     display: flex;
@@ -77,12 +84,18 @@ a:hover {
     background-color: var(--secondary-dark-txt);
     border: 1px solid var(--secondary-light-txt);
 }
+
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .App {
     display: flex;
     flex-direction: column;
     place-content: center;
     place-items: center;
-    padding: 2rem;
+    padding: 0 1rem;
     gap: 2.5rem;
 }
 
@@ -97,7 +110,9 @@ a:hover {
     left: 0;
     gap: 3rem;
     width: 100vw;
+    max-width: 100vw;
     height: 100vh;
+    max-height: 100vh;
 }
 
 .nav_hide {
@@ -124,6 +139,9 @@ a:hover {
     width: inherit;
     font-weight: 600;
     padding: 0.5rem 0;
+}
+.icon_link {
+    padding: 0.5rem;
 }
 
 .intro_head {
@@ -188,4 +206,65 @@ a:hover {
 
 .high_light {
     color: var(--secondary-light-txt);
+}
+
+@media (min-width: 850px) {
+    :root {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .App {
+        gap: 3rem;
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    :root {
+        font-size: 1.15rem;
+    }
+    .App {
+        gap: 3rem;
+        padding-top: 4rem;
+    }
+    .nav {
+        height: 4.5rem;
+        max-height: 4.5rem;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 0;
+        background: var(--bg-opacity-color);
+    }
+    .nav_link {
+        display: inherit;
+        width: 100px;
+        padding: 0.25rem 0.9rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .nav_hide {
+        display: flex;
+        right: 0;
+    }
+    .high_light {
+        font-size: 1.25rem;
+    }
+    .contact_link,
+    .resume_link {
+        font-size: 1.15rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    section {
+        gap: 1.25rem;
+    }
 }

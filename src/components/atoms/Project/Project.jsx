@@ -25,14 +25,14 @@ export function Project({
                         <Link
                             isExternal
                             href={githubRepoLink}
-                            content={<FiGithub size='2rem' />}
+                            content={<FiGithub />}
                         />
                     )}
                     {hostedProjectLink && (
                         <Link
                             isExternal
                             href={hostedProjectLink}
-                            content={<FiExternalLink size='2rem' />}
+                            content={<FiExternalLink />}
                         />
                     )}
                 </div>

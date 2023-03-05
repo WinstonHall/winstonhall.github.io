@@ -1,8 +1,17 @@
 .footer {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 5.5rem;
+    top: 0;
+    background: var(--bg-opacity-color);
 }
 
 .footer_icons {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    max-width: 850px;
 }

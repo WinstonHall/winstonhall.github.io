@@ -2,7 +2,7 @@ import { ListItem } from '../../'
 
 export function List({
     isOrdered = false,
-    isWrapped = false,
+    className = '',
     listItems = [
         'Missing List Items Array',
         'Missing List Items Array',
@@ -15,10 +15,10 @@ export function List({
             return <ListItem key={index} listItem={listItem} />
         })
     }
-
+    const list = mapList()
     return isOrdered ? (
-        <ol className={isWrapped ? 'wrap_list' : ''}>{mapList()}</ol>
+        <ol className={className}>{list}</ol>
     ) : (
-        <ul className={isWrapped ? 'wrap_list' : ''}>{mapList()}</ul>
+        <ul className={className}>{list}</ul>
     )
 }

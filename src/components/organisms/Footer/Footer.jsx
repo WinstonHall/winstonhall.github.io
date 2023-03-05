@@ -1,15 +1,25 @@
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiGithub } from 'react-icons/fi'
 import { footer, footer_icons } from './Footer.module.css'
 
 export function Footer() {
     return (
-        <div className={footer}>
+        <footer className={footer}>
             <div className={footer_icons + ' high_light'}>
-                <FiGithub />
-                <FiTwitter />
-                <FiLinkedin />
+                <a
+                    href='https://github.com/WinstonHall'
+                    target='_blank'
+                    className='icon_link'
+                >
+                    <FiGithub />
+                </a>
+                {/* <a className='icon_link'>
+                    <FiTwitter />
+                </a> */}
+                {/* <a href='' className='icon_link'>
+                    <FiLinkedin />
+                </a> */}
             </div>
             <p>Designed & Built by Winston Hall</p>
-        </div>
+        </footer>
     )
 }

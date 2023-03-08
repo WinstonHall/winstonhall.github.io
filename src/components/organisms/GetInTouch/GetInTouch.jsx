@@ -4,7 +4,7 @@ import { get_intouch } from './GetInTouch.module.css'
 export function GetInTouch() {
     return (
         <div className={get_intouch} id='contact'>
-            <SectionHead number={3} title='Get In Touch' />
+            <SectionHead number={2} title='Get In Touch' />
             <div>
                 <p>
                     Thanks for taking the time to learn a bit about me and my

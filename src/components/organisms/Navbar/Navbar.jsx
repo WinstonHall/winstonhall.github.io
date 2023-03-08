@@ -7,30 +7,34 @@ export function Navbar() {
     return (
         <div>
             <ToggleNav {...{ isToggled, setIsToggled }} />
-            <nav className={`nav ${isToggled ? 'nav_hide' : ''}`}>
+            <nav className={`nav ${isToggled === true ? 'nav_hide' : ''}`}>
                 <Link
                     className='nav_link'
                     href='#about'
                     position={0}
                     content='About'
+                    closeNav={() => setIsToggled(true)}
                 />
                 <Link
                     className='nav_link'
                     href='#experience'
                     position={1}
                     content='Experience'
+                    closeNav={() => setIsToggled(true)}
                 />
-                <Link
+                {/* <Link
                     className='nav_link'
                     href='#work'
                     position={2}
                     content='Work'
-                />
+                    closeNav={()=>setIsToggled(flase)}
+                /> */}
                 <Link
                     className='nav_link'
                     href='#contact'
-                    position={3}
+                    position={2}
                     content='Contact'
+                    closeNav={() => setIsToggled(true)}
                 />
                 <Link
                     className='reume_link nav_link'

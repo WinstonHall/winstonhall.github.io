@@ -60,7 +60,7 @@ function App() {
             <IntroHead />
             <Section number={0} title='About Me' id='about'>
                 <p>
-                    Hi there, my name is WInston Hall, and I'm a software
+                    Hi there, my name is Winston Hall, and I'm a software
                     engineer with 2 years of experience in the field. I've
                     always been fascinated by how technology can solve complex
                     problems and make people's lives easier, which is what drew

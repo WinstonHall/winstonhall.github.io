@@ -23,6 +23,9 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
+* {
+    box-sizing: border-box;
+}
 
 #root {
     max-height: 100vh;
@@ -123,7 +126,7 @@ svg {
 .nav_link {
     display: inherit;
     justify-content: center;
-    width: 100px;
+    width: 150px;
     padding: 1rem;
     gap: 0.25rem;
 }
@@ -238,7 +241,6 @@ svg {
     }
     .nav_link {
         display: inherit;
-        width: 100px;
         padding: 0.25rem 0.9rem;
         margin-right: 1rem;
         font-size: 1rem;

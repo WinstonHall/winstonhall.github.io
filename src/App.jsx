@@ -58,7 +58,7 @@ function App() {
         <div className='App'>
             <Navbar />
             <IntroHead />
-            <Section number={0} title='About Me'>
+            <Section number={0} title='About Me' id='about'>
                 <p>
                     Hi there, my name is WInston Hall, and I'm a software
                     engineer with 2 years of experience in the field. I've
@@ -102,10 +102,10 @@ function App() {
                     ]}
                 />
             </Section>
-            <Section number={1} title='Work Experience'>
+            <Section number={1} title='Work Experience' id='experience'>
                 <Job jobs={jobs} />
             </Section>
-            {/* <Section number={2} title={`Things I've built`}>
+            {/* <Section number={2} title={`Things I've built`} id='#projects'>
                 {projects.map(function (project, index) {
                     return <Project key={`Project-${index}`} {...project} />
                 })}

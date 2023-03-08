@@ -3,7 +3,7 @@ import { get_intouch } from './GetInTouch.module.css'
 
 export function GetInTouch() {
     return (
-        <div className={get_intouch}>
+        <div className={get_intouch} id='contact'>
             <SectionHead number={3} title='Get In Touch' />
             <div>
                 <p>

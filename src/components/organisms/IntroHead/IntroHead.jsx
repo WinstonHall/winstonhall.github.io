@@ -17,7 +17,7 @@ export function IntroHead() {
             <Link
                 className='resume_link'
                 isExternal
-                href={'public/Resume.pdf'}
+                href={'/Resume.pdf'}
                 content='Resume'
             />
         </div>

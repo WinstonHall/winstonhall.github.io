@@ -34,7 +34,7 @@ export function Navbar() {
                 />
                 <Link
                     className='reume_link nav_link'
-                    href='public/Resume.pdf'
+                    href='/Resume.pdf'
                     isExternal
                     content='Resume'
                 />

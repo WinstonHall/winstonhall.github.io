@@ -5,7 +5,7 @@ export function IntroHead() {
         <div className={'intro_head'}>
             <p className='high_light'>Hi, my name is</p>
             <h1>Winston Hall.</h1>
-            <h2>Software Enginer </h2>
+            <h2>Software Engineer </h2>
             <p>
                 As a software engineer, I specialize in designing, developing,
                 and testing software applications to meet the needs of

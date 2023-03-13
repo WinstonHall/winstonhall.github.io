@@ -35,6 +35,9 @@
     max-height: 100vh;
     overflow-y: scroll;
 }
+#contact {
+    text-align: left;
+}
 
 /* DEFAULT ELEMENT CSS PROPERTIES */
 h1,

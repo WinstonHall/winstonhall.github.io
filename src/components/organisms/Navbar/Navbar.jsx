@@ -13,14 +13,14 @@ export function Navbar() {
                     href='#about'
                     position={0}
                     content='About'
-                    closeNav={() => setIsToggled(true)}
+                    closeNav={() => setIsToggled(false)}
                 />
                 <Link
                     className='nav_link'
                     href='#experience'
                     position={1}
                     content='Experience'
-                    closeNav={() => setIsToggled(true)}
+                    closeNav={() => setIsToggled(false)}
                 />
                 {/* <Link
                     className='nav_link'
@@ -34,7 +34,7 @@ export function Navbar() {
                     href='#contact'
                     position={2}
                     content='Contact'
-                    closeNav={() => setIsToggled(true)}
+                    closeNav={() => setIsToggled(false)}
                 />
                 <Link
                     className='reume_link nav_link'

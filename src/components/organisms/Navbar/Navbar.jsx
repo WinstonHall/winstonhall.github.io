@@ -7,7 +7,7 @@ export function Navbar() {
     return (
         <div>
             <ToggleNav {...{ isToggled, setIsToggled }} />
-            <nav className={`nav ${isToggled === true ? 'nav_hide' : ''}`}>
+            <nav className={`nav ${isToggled === true ? '' : 'nav_hide'}`}>
                 <Link
                     className='nav_link'
                     href='#about'
